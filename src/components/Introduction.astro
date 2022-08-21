@@ -1,0 +1,48 @@
+---
+import NavbarSMButton from './NavbarSMButton.astro'
+---
+
+<section class="mb-5 mt-5">
+	<div class="row">
+		<div class="d-flex col-sm-12 col-md-6 justify-content-center">
+			<img id="imgProfile" class="rounded-circle" src="/assets/images/user-color.svg" />
+		</div>
+		<div id="myIntro" class="d-flex flex-column align-items-center col-sm-12 col-md-6 mt-5">
+			<p>Oscar Aldaz<br>
+				FullStack developer
+			</p>
+			
+			<ul id="socialMediaList" class="d-flex justify-content-center pt-3 list-unstyled hstack gap-4">
+				<NavbarSMButton src={"/assets/images/github.svg"} />
+				<NavbarSMButton src={"/assets/images/linkedin.svg"} />
+				<NavbarSMButton src={"/assets/images/twitter.svg"} />
+			</ul>
+		</div>
+	</div>
+</section>
+
+<style>
+	#imgProfile {
+		width: 32vw;
+		height: 36vh;
+	}
+
+	@media (min-width: 768px) {
+		#myIntro {
+			align-items: flex-start !important;
+		}
+
+		#imgProfile {
+			justify-content: end !important;
+			
+		}
+	}
+
+	@media (max-width: 768px) {
+		#socialMediaList {
+			justify-content: center !important;
+			gap: 2rem !important;
+		}
+	}
+	
+</style>

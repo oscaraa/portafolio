@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from "../components/Navbar.astro";
+import Introduction from "../components/Introduction.astro";
+import About from "../components/About.astro";
+import TechStack from "../components/TechStack.astro";
+import Projects from '../components/Projects.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<Navbar />
+	<main class="container">
+		<Introduction />
+		<About />
+		<TechStack />
+		<Projects />
+	</main>
+	
+	
+	<Footer />
+</Layout>
+

@@ -1,0 +1,10 @@
+---
+    export interface Props {
+        src: string;
+    }
+
+
+    const { src } = Astro.props as Props;
+---
+
+<li class="pe-2"><img width="22" height="22" src={src} /></li>
